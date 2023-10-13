@@ -16,37 +16,6 @@
   display: block;
 }
 
-.tabset label {
-  position: relative;
-  font-family: var(--passion-one);
-  left: 55px;
-  padding: 5px;
-  cursor: pointer;
-  width: 86px;
-  height: 19px;
-  border-radius: 59.5px;
-  background: #fff;
-  /* box-shadow: 1px 4px 13px -6px #7b1e56; */
-  color: #1a1b1e;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: normal;
-  margin: 0 5px;
-}
-
-.tabset::before {
-  content: "";
-  width: 303px;
-  height: 63px;
-  border-radius: 59.5px;
-  background: #fff;
-  position: absolute;
-  top: -30px;
-  left: 40px;
-  display: block;
-}
-
 .tabset > label:hover,
 .tabset > input:focus + label,
 .tabset > input:checked + label {
@@ -69,6 +38,87 @@
   max-width: 65em;
   position: relative;
 }
+
+@media screen and (max-width: 768px) {
+  .tabset label {
+    position: relative;
+    font-family: var(--passion-one);
+    left: 55px;
+    padding: 5px;
+    cursor: pointer;
+    width: 86px;
+    height: 19px;
+    border-radius: 59.5px;
+    background: #fff;
+    /* box-shadow: 1px 4px 13px -6px #7b1e56; */
+    color: #1a1b1e;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 5px;
+  }
+
+  .tabset::before {
+    content: "";
+    width: 303px;
+    height: 63px;
+    border-radius: 59.5px;
+    background: #fff;
+    position: absolute;
+    top: -30px;
+    left: 40px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tabset {
+    max-width: 100% !important;
+    position: relative;
+  }
+
+  .tabset label {
+    position: relative;
+    font-family: var(--passion-one);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 59.5px;
+    background: #fff;
+    left: 29%;
+    padding: 10px 28px;
+    width: 163px;
+    height: 37px;
+    color: #1a1b1e;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 5px;
+  }
+
+  .tabset::before {
+    content: "";
+    width: 574px;
+    height: 119px;
+    top: -50px;
+    left: 28%;
+    border-radius: 59.5px;
+    background: #fff;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width:1440px){
+  .tabset label {
+    left: 32.5%;
+}
+
+.tabset::before {
+    left: 31.5%;
+}
+}
+
 @media screen and (max-width: 375px) {
   .tabset label {
     left: 55px;
@@ -78,16 +128,15 @@
     top: -30px;
     left: 40px;
   }
-  
 }
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
-    .tabset label {
-      left: 75px;
-    }
-  
-    .tabset::before {
-      top: -30px;
-      left: 60px;
-    }
+  .tabset label {
+    left: 75px;
   }
+
+  .tabset::before {
+    top: -30px;
+    left: 60px;
+  }
+}
