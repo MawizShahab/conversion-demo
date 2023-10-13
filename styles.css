@@ -178,6 +178,7 @@ footer {
     left: 0;
     overflow: hidden;
     padding: 0 20px;
+    z-index: 111;
   }
   .nav > .nav-list > li {
     width: 100%;
@@ -232,5 +233,217 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Contact us */
+
+  form.contact-us-form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+  }
+
+  .fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .fields input,
+  .fields textarea {
+    background: #fff;
+    box-shadow: 0px 4px 19px -5px #7b1e56;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+  }
+
+  .fields input::placeholder,
+  .fields textarea::placeholder {
+    color: #1e1a1a;
+    font-family: var(--made-soulmaze);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+
+  .fields input {
+    border-radius: 34px;
+    width: 213px;
+    height: 37px;
+  }
+
+  .fields textarea {
+    border-radius: 9px;
+    width: 213px;
+    height: 90px;
+  }
+
+  .fields button {
+    width: 116px;
+    height: 36px;
+    border-radius: 34px;
+    background: #fff;
+    box-shadow: 0px 4px 19px -5px #7b1e56;
+    outline: 0;
+    border: 0;
+    color: #000;
+    font-family: var(--made-soulmaze);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    /* align-self: flex-start; */
+    /* margin-left: 25px; */
+  }
+
+  .empty-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .empty-box textarea {
+    width: 217px;
+    height: 201px;
+    border-radius: 34px;
+    background: #fff;
+    box-shadow: 0px 4px 19px -5px #7b1e56;
+    outline: 0;
+    border: 0;
+  }
+
+  /* Calendar Design */
+
+  .calendar-container {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .calendar-card {
+    width: 350px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 34px;
+    background: #fff;
+    box-shadow: 0px 4px 14px -5px #7b1e56;
+  }
+
+  .mode-isolation img {
+    width: 33px;
+    height: 34px;
+  }
+
+  .team-logo img {
+    width: 46px;
+    height: 44px;
+  }
+
+  .caldendar-content p {
+    margin: 0;
+    color: #1e1a1a;
+    text-align: center;
+    font-family: var(--passion-one);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+
+  .caldendar-content .venue {
+    font-size: 11px;
+  }
+
+  .caldendar-content .vs {
+    font-size: 16px;
+  }
+
+  .seperator {
+    width: 210px;
+    height: 6px;
+    background: #1e1a1a;
+    margin: 50px 0 20px 0;
+  }
+
+  .some-text {
+    color: #1e1a1a;
+    text-align: center;
+    font-family: var(--passion-one);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+  }
+
+  /*Tab Sections*/
+  .hero img {
+    width: 100%;
+  }
+
+  /* Joueurs Tab */
+
+  section#joueurs {
+    text-align: center;
+  }
+
+  /* History Tab */
+
+  section#historiques {
+    padding: 35px 35px 35px 40px;
+    text-align: left;
+  }
+
+  section#historiques p {
+    color: #000;
+    font-family: Overlock;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  /* Sponsers Tab*/
+
+  #sponsers h2 {
+    display: none;
+  }
+
+  .sponsers-container,
+  .sponsers-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .sponsers-logo-container img {
+    max-width: 50%;
+  }
+
+  /* .tabset {
+    display: none;
+  } */
+}
+
+@media screen and (min-width: 768px) {
+  .accueil-container,
+  .nav,
+  .calendar-container,
+  footer,
+  .contact-us-form,
+  .hero,
+  .tabset {
+    display: none !important;
   }
 }
