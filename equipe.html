@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./equipe.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav" id="top">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">
+          <a href="./accueil.html"
+            ><img src="./images/header-logo.svg" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <ul class="nav-list">
+        <li><a href="./equipe.html">Équipe</a></li>
+        <li><a href="./calendrier.html">Calendrier</a></li>
+        <li><a href="./contact-us.html">Contact</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#"><img src="./images/instagram.svg" alt="" /></a>
+        <a href="#"><img src="./images/facebook.svg" alt="" /></a>
+      </div>
+    </nav>
+    <div class="hero">
+      <img src="./images/hero-mobile.svg" alt="" />
+    </div>
+
+    <div class="tabset">
+      <!-- <div class="tabs-container"> -->
+      <!-- Tab 1 -->
+      <input
+        type="radio"
+        name="tabset"
+        id="tab1"
+        aria-controls="joueurs"
+        checked
+      />
+      <label for="tab1">JOUEURS</label>
+      <!-- Tab 2 -->
+      <input type="radio" name="tabset" id="tab2" aria-controls="historiques" />
+      <label for="tab2">HISTORIQUES</label>
+      <!-- Tab 3 -->
+      <input type="radio" name="tabset" id="tab3" aria-controls="sponsers" />
+      <label for="tab3">SPONSORS</label>
+      <!-- </div> -->
+      <div class="tab-panels">
+        <section id="joueurs" class="tab-panel">
+          <!-- <h2>6A. Märzen</h2> -->
+          <img src="./images/artboard-mobile.png" />
+        </section>
+        <section id="historiques" class="tab-panel">
+          <!-- <h2>6B. Rauchbier</h2> -->
+          <p>
+            Évoquer l'histoire du FC Attalens sans saluer son fondateur émérite,
+            Gustave Sonney, serait omettre de reconnaître un homme dont
+            l'empreinte s'est gravée dans les cœurs, créant une légende
+            indélébile.
+          </p>
+          <p>
+            Né le 18 avril 1890 à St-Martin (Fribourg), Gustave Sonney, bien
+            plus qu'un fondateur, incarne l'esprit pionnier du club. Ordonné
+            prêtre à Fribourg le 16 juillet 1910, il entame un parcours
+            spirituel remarquable, explorant les horizons du monde à
+            Châtel-St-Denis et Genève en tant que vicaire. De retour en terres
+            fribourgeoises en 1920, il devient curé à Montagny, puis à Attalens.
+          </p>
+          <p>
+            Monsieur le curé, passionné des activités sportives, utilise les
+            kermesses locales pour financer la construction d'un mini-complexe
+            sportif à La Condémine, l'emplacement actuel du terrain du club. Le
+            1er juillet 1934, naît le FC Attalens, avec St-Georges comme patron
+            spirituel, soulignant l'importance de la foi dans ses statuts
+            initiaux.
+          </p>
+          <p>
+            Le 17 juillet 1935, un an après la création du club, la destinée
+            prend un virage tragique avec le décès de l'abbé Gustave Sonney à
+            l'âge de 45 ans. Sa vision survit, célébrée lors des 75 ans du FC
+            St-Georges Attalens en 2009.
+          </p>
+          <p>
+            "Conquérir la jeunesse et gagner tous les cœurs. Telle est notre
+            devise." Ces mots, porteurs de la philosophie de Sonney, guident le
+            club à travers les décennies. Alors que nous honorons le passé,
+            transmettons à la génération future l'esprit indomptable légué par
+            Gustave Sonney. En avant pour 2034, perpétuons la passion du FC
+            St-Georges Attalens.
+          </p>
+        </section>
+        <section id="sponsers" class="tab-panel">
+          <h2>Nous remercions tous nos sponsors.</h2>
+          <div class="sponsers-container">
+            <div class="sponsers-logo-container">
+              <img src="./images/sponser1.svg" alt="" />
+              <img src="./images/sponser2.svg" alt="" />
+              <img src="./images/sponser3.svg" alt="" />
+            </div>
+            <div class="sponsers-logo-container">
+              <img src="./images/sponser4.svg" alt="" />
+              <img src="./images/sponser5.svg" alt="" />
+              <img src="./images/sponser6.svg" alt="" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="go-to-container">
+        <div class="go-to">
+          <a href="#top">
+            <img src="./images/footer-logo.svg" alt="goto" />
+          </a>
+        </div>
+        <div class="social-links-mobile">
+          <a href="#"><img src="./images/instagram.svg" alt="" /></a>
+          <a href="#"><img src="./images/facebook.svg" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <span> ©FC Attalens 2023 </span>
+        <span>Projet Pédagogique</span>
+      </div>
+    </footer>
+  </body>
+</html>

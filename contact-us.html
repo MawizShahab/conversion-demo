@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <nav class="nav" id="top">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">
+          <a href="./accueil.html"
+            ><img src="./images/header-logo.svg" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <ul class="nav-list">
+        <li><a href="./equipe.html">Équipe</a></li>
+        <li><a href="./calendrier.html">Calendrier</a></li>
+        <li><a href="./contact-us.html">Contact</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#"><img src="./images/instagram.svg" alt="" /></a>
+        <a href="#"><img src="./images/facebook.svg" alt="" /></a>
+      </div>
+    </nav>
+
+    <form action="submit" class="contact-us-form">
+      <div class="fields">
+        <input type="text" placeholder="NOM" />
+        <input type="text" placeholder="MAIL" />
+        <textarea
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="MESSAGE"
+        ></textarea>
+        <button>ENVOYER</button>
+      </div>
+      <div class="empty-box">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+    </form>
+    <footer>
+      <div class="go-to-container">
+        <div class="go-to">
+          <a href="#top">
+            <img src="./images/footer-logo.svg" alt="goto" />
+          </a>
+        </div>
+        <div class="social-links-mobile">
+          <a href="#"><img src="./images/instagram.svg" alt="" /></a>
+          <a href="#"><img src="./images/facebook.svg" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <span> ©FC Attalens 2023 </span>
+        <span>Projet Pédagogique</span>
+      </div>
+    </footer>
+  </body>
+</html>
