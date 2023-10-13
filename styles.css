@@ -234,6 +234,10 @@ footer {
     align-items: center;
     gap: 80px;
   }
+
+  .hero-desktop {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -307,7 +311,7 @@ footer {
     justify-content: center;
   }
 
-  .empty-box textarea {
+  .empty-box iframe {
     width: 217px;
     height: 201px;
     border-radius: 34px;
@@ -392,6 +396,10 @@ footer {
     width: 100%;
   }
 
+  .artboard-desktop {
+    display: none;
+  }
+
   /* Joueurs Tab */
 
   section#joueurs {
@@ -437,13 +445,213 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .accueil-container,
-  .nav,
-  .calendar-container,
-  footer,
-  .contact-us-form,
-  .hero,
-  .tabset {
-    display: none !important;
+  /* Calendar Desktop */
+  .calendar-container {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .calendar-card {
+    width: 798px;
+    height: 186px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* padding: 20px; */
+    border-radius: 34px;
+    background: #fff;
+    box-shadow: 0px 4px 14px -5px #7b1e56;
+  }
+
+  .mode-isolation img {
+    width: 100%;
+    height: auto;
+  }
+
+  .caldendar-content p {
+    margin: 0;
+    color: #1e1a1a;
+    text-align: center;
+    font-family: var(--passion-one);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+
+  .caldendar-content .venue {
+    font-size: 16px;
+  }
+
+  .caldendar-content .vs {
+    font-size: 32px;
+    margin-top: 5px;
+  }
+
+  .team-logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .seperator {
+    width: 861px;
+    height: 6px;
+    background: #1e1a1a;
+    margin: 50px 0 20px 0;
+  }
+
+  .some-text {
+    color: #1e1a1a;
+    text-align: center;
+    font-family: var(--passion-one);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+  }
+
+  /* Contact Us Desktop*/
+
+  form.contact-us-form {
+    padding: 90px 82px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .fields input {
+    border-radius: 34px;
+    width: 516px;
+    height: 87px;
+  }
+
+  .fields textarea {
+    border-radius: 34px;
+    width: 516px;
+    height: 217px;
+  }
+
+  .fields input,
+  .fields textarea {
+    background: #fff;
+    box-shadow: 0px 4px 19px -5px #7b1e56;
+    border: 0;
+    outline: 0;
+    padding: 28px 38px;
+  }
+  .fields input::placeholder,
+  .fields textarea::placeholder {
+    color: #1e1a1a;
+    font-family: var(--made-soulmaze);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+
+  .fields button {
+    width: 279px;
+    height: 87px;
+    border-radius: 34px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(123, 30, 86) 0px 4px 19px -5px;
+    outline: 0px;
+    border: 0px;
+    color: rgb(0, 0, 0);
+    font-family: var(--made-soulmaze);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-align: left;
+    padding: 0 30px;
+  }
+  .empty-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .empty-box iframe {
+    width: 526px;
+    height: 487px;
+    border-radius: 34px;
+    background: #fff;
+    box-shadow: 0px 4px 19px -5px #7b1e56;
+    outline: 0;
+    border: 0;
+  }
+
+  /* Equipe Desktop */
+  .hero-mobile {
+    display: none;
+  }
+  .hero-desktop {
+    width: 100%;
+  }
+
+  .artboard-mobile {
+    display: none;
+  }
+
+  .tab-panels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+  section#historiques {
+    padding: 35px 35px 35px 40px;
+    text-align: center;
+  }
+
+  section#historiques p {
+    color: #000;
+    font-family: Overlock;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 743px;
+  }
+
+  section#sponsers h2 {
+    color: #000;
+    font-family: Passion One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    margin: 50px 0 80px 0 !important;
+  }
+
+  .sponsers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .sponsers-logo-container {
+    display: flex;
+    flex-direction: revert;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
   }
 }
